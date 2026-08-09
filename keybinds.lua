@@ -1,0 +1,5 @@
+require("bindings.applications")
+require("bindings.layouts")
+require("bindings.system")
+require("bindings.media")
+require("bindings.screenshots")

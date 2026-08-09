@@ -1,0 +1,7 @@
+require("config.monitor")
+require("config/autostart")
+require("config/env")
+require("config/animation")
+require("config.look-window")
+require("config.input")
+require("config/window-rules")
