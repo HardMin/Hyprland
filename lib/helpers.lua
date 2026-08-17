@@ -19,3 +19,11 @@ function o.bind(key, description, action, options)
 
 	hl.bind(key, action, opts)
 end
+
+function o.notify(text)
+	hl.notification.create({
+		text = text,
+		timeout = 2500, -- Tiempo en milisegundos (2.5 segundos)
+		font_size = 14,
+	})
+end

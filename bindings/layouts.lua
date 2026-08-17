@@ -1,4 +1,5 @@
 o.bind("SUPER + f", "Toggle Window Fullscreen", hl.dsp.window.fullscreen())
+o.bind("SUPER + M", "Toggle Window Maximized", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 
 o.bind("SUPER + V", "Toggle Window Float", hl.dsp.window.float({ action = "toggle" }))
 o.bind("SUPER + P", "Toggle Window Pseudo ", hl.dsp.window.pseudo())
@@ -9,6 +10,13 @@ o.bind("SUPER + h", "Move Focus Left", hl.dsp.focus({ direction = "left" }))
 o.bind("SUPER + l", "Move Focus Right", hl.dsp.focus({ direction = "right" }))
 o.bind("SUPER + k", "Move Focus Up", hl.dsp.focus({ direction = "up" }))
 o.bind("SUPER + j", "Move Focus Down", hl.dsp.focus({ direction = "down" }))
+
+-- Magic special
+o.bind("SUPER + s", "Toggle Workspace Magic", hl.dsp.workspace.toggle_special("magic"))
+
+o.bind("SUPER + c", "Move Special magic", hl.dsp.window.move({ workspace = "special:magic", action = "toggle" }))
+
+o.bind("SUPER + SHIFT + c", "Move workspace ", hl.dsp.window.move({ workspace = "+0" }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
